@@ -1,0 +1,4 @@
+/app/cache/*
+__pycache__
+test.py
+.DS_Store
