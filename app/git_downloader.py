@@ -13,7 +13,10 @@ class GitDownloader:
         Sets up necessary paths for caching and storing ETag information.
         Creates the cache directory if it doesn't already exist.
         """
-        self.app_dir = os.path.join(os.getcwd(), 'app', 'cache')
+
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+
+        self.app_dir = os.path.join(current_dir, 'cache')
         self.etag_file = os.path.join(self.app_dir, 'etag.json')
         self.zip_path = os.path.join(self.app_dir, 'cache.zip')
 
