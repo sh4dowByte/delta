@@ -29,6 +29,51 @@
 
 **Note**: Delta is designed for educational and testing purposes. Ensure to use this application in a responsible and legal manner, following relevant cybersecurity guidelines and ethics.
 
+## ⚙️ Installation
+
+### Using pipx (Recommended)
+`pipx` is a tool to install and run Python applications in isolated environments. Follow these steps to install Beta:
+
+1. Install pipx:
+   ```bash
+   sudo apt install pipx
+   pipx ensurepath
+   ```
+
+2. Clone the Delta repository:
+   ```bash
+   git clone https://github.com/sh4dowByte/delta.git
+   cd delta
+   ```
+
+3. Install Delta using pipx:
+   ```bash
+   pipx install .
+   ```
+
+### Alternative Setup - Using Alias
+If you prefer not to use `pipx`, you can set up an alias to run `delta.py` directly from your terminal.
+
+1. Clone the Delta repository:
+   ```bash
+   git clone https://github.com/sh4dowByte/delta.git
+   cd delta
+   ```
+
+2. Install the required dependencies from `requirements.txt`:
+   ```bash
+   python3 -m pip install -r requirements.txt
+   ```
+
+3. Open your terminal and add the following alias to your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
+   ```bash
+   alias delta='python3 ~/Pentest/delta/delta.py'
+   ```
+
+4. After adding the alias, run `source ~/.bashrc` (or `source ~/.zshrc` for zsh) to reload your shell configuration.
+
+Now, you can run `delta` directly from your terminal!
+
 ## 🛠️ Reference Tools
 
 - **[SploitScan](https://github.com/xaitax/SploitScan/)** - A powerful vulnerability and exploit discovery tool focusing on scanning and finding vulnerabilities efficiently.
